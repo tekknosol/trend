@@ -116,7 +116,7 @@ sens.slope <-function(x, conf.level = 0.95)
     cint <- c(lo, up)
     attr(cint, "conf.level") <- conf.level
 
-    ans <- list(estimates = c("Sen's slope" = b.sen),
+    ans <- list(estimate = c("Sen's slope" = b.sen),
                 statistic = c(z = z),
                 p.value = pval,
                 null.value = c(z = 0),
